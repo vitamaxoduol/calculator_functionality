@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/calculator.css" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form name="form">
+        <div class="display">
+          <input type="text" id="text" placeholder="0" name="displayResult" />
+        </div>
+        <div class="buttons">
+          <div class="row">
+            <input type="button" class="cool" id="delete" value="DEL" />
+            <input type="button" class="cool" id="clear" value="CA" />
+          </div>
+
+          <div class="row">
+            <input type="button" name="b1" value="1" onclick="append(value)" />
+            <input type="button" name="b2" value="2" onclick="append(value)" />
+            <input type="button" name="b3" value="3" onclick="append(value)" />
+            <input
+              type="button"
+              name="mulb"
+              value="*"
+              onclick="append(value)"
+            />
+          </div>
+
+          <div class="row">
+            <input type="button" name="b4" value="4" onclick="append(value)" />
+            <input type="button" name="b5" value="5" onclick="append(value)" />
+            <input type="button" name="b6" value="6" onclick="append(value)" />
+            <input
+              type="button"
+              name="subb"
+              value="-"
+              onclick="append(value)"
+            />
+          </div>
+
+          <div class="row">
+            <input type="button" name="b7" value="7" onclick="append(value)" />
+            <input type="button" name="b8" value="8" onclick="append(value)" />
+            <input type="button" name="b9" value="9" onclick="append(value)" />
+            <input
+              type="button"
+              name="mulb"
+              value="+"
+              onclick="append(value)"
+            />
+          </div>
+
+          <div class="row">
+            <input type="button" name="b0" value="0" onclick="append(value)" />
+            <input
+              type="button"
+              name="potb"
+              value="."
+              onclick="append(value)"
+            />
+            <input
+              type="button"
+              name="divb"
+              value="/"
+              onclick="append(value)"
+            />
+            <input type="button" id="equal" class="red" value="=" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./assets/calculator.js"></script>
+  </body>
+</html>
